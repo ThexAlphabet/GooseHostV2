@@ -24,7 +24,7 @@ const config = {
 
 const port = process.env.PORT || 3000;
 if (!config.baseURL && !process.env.BASE_URL && process.env.PORT && process.env.NODE_ENV !== 'production') {
-  config.baseURL = `http://localhost:${port}`;
+  config.baseURL = `https://29800008-41ed-4c54-9f5e-6bce7957a62c-00-2o9vskbo84tpr.spock.replit.dev/`;
 }
 
 app.use(auth(config));
@@ -36,6 +36,9 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', router);
+
+
+
 
 // Catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -51,6 +54,24 @@ app.use(function (err, req, res, next) {
     message: err.message,
     error: process.env.NODE_ENV !== 'production' ? err : {}
   });
+});
+
+app.post("/auth/get", (req, res) => {
+  try {
+    // Access request data (replace with your specific logic)
+    const email = req.body.email; // Access email from request body
+
+    // Perform necessary actions with the received data
+    console.log("Received email:", email);
+
+    // Securely handle any password data (avoid storing in plain text)
+
+    // Send a response
+    res.status(200).json({ message: "Data received successfully" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Error processing request" });
+  }
 });
 
 http.createServer(app)

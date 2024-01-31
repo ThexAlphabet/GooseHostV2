@@ -1,0 +1,34 @@
+{
+  "files": {
+    "01-Login/views/index.ejs": [
+      {
+        "id": "e47e00c5-707f-4899-9c4f-818e1af7af53",
+        "line": 111,
+        "version": 136,
+        "index": 5330
+      }
+    ],
+    "server/views/profile.ejs": [
+      {
+        "id": "25cc0de1-e380-4e9b-8a2f-cbcffbe724a9",
+        "line": 9,
+        "version": 337,
+        "index": 136
+      },
+      {
+        "id": "8b5937dc-4a1f-4939-ade1-c199ca529e2d",
+        "line": 10,
+        "version": 337,
+        "index": 170
+      }
+    ],
+    "server/views/style.css": [
+      {
+        "id": "fdc40cce-208f-4e64-8063-fa36703c3f49",
+        "line": 426,
+        "version": 33,
+        "index": 6706
+      }
+    ]
+  }
+}
