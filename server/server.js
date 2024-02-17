@@ -24,7 +24,7 @@ const config = {
 
 const port = process.env.PORT || 3000;
 if (!config.baseURL && !process.env.BASE_URL && process.env.PORT && process.env.NODE_ENV !== 'production') {
-  config.baseURL = `https://29800008-41ed-4c54-9f5e-6bce7957a62c-00-2o9vskbo84tpr.spock.replit.dev/`;
+  config.baseURL = `https://refactored-sniffle-q7v74jxgx7vvhxx66-3000.app.github.dev/`;
 }
 
 app.use(auth(config));
